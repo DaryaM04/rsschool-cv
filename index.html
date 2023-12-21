@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+
+     <!-- Задача 5: Создание динамической формы с проверкой в реальном времени
+        Цель: Разработать динамическую форму с обратной связью по проверке в режиме реального времени. 
+        Динамически изменять стили в зависимости от ввода данных пользователем и статуса проверки. 
+        Требования: Создайте форму, содержащую по крайней мере три поля для ввода (например, имя, 
+        адрес электронной почты, пароль). По мере ввода пользователем текста динамически изменяйте 
+        цвет границы каждого поля ввода на основе правил проверки: 
+        Зеленый: допустимый ввод 
+        Красный: недопустимый ввод 
+        Рядом с каждым полем ввода выводится сообщение, указывающее статус проверки. При отправке формы
+        предотвратите отправку, если какие-либо входные данные неверны, и выведите сообщение об ошибке. 
+        Добавьте кнопку "Очистить", чтобы сбросить форму и очистить сообщения проверки. -->
+        <!-- Подсказка: checkValidity(), textContent, value, forEach() -->
+
+        <div class="inputWindow">
+            <div class="containerInput">
+                <div class="inputUserName">
+                    <label for="inputName" class="lable-class">Введите ваше имя</label>
+                    <input type="text" class="userName no-correct" id="userName" required  minlength = "2" >
+                    <p id="textErrorInputName"></p>
+                </div>
+                <div class="inputUserSurname">
+                    <label for="inputSurname" class="lable-class">Введите вашу фамилию</label>
+                    <input type="text" class="userSurname no-correct" id="userSurname" >
+                    <p id="textErrorInputSurname"></p>
+                </div>
+                <div class="inputUserPhone">
+                    <label for="inputPhone" class="lable-class">Введите ваш номер телефона</label>
+                    <input type="number" class="userPhone no-correct" id="userPhone" >
+                    <p id="textErrorInputPhone"></p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="containerButtons">
+                    <button class="send" id="send">Отправить</button>
+                    <button class="clean" id="clean">Очистить</button>
+                </div>
+                <div class="error">
+                    <p id="error"></p>
+                </div>
+            </div>
+
+        </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
