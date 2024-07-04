@@ -1,8 +1,6 @@
 ## Darya Andreevna Boychenko <br>
 **tel:** 8-951-498-20-30
 
-======
-
 # CV
 Education
 ---------
