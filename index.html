@@ -7,6 +7,16 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="menu_nav">
+            <ul class="button_container">
+                <li class="href_nav" type="button"><a href="#main_education" class="menu_link">Education</a></li>
+                <li class="href_nav" type="button"><a href="#contacts" class="menu_link">Contacts</a></li>
+                <li class="href_nav" type="button"><a href="#main_hardSkills" class="menu_link">Skills</a></li>
+                <li class="href_nav" type="button"><a href="#git_container" class="menu_link">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
         <header class="header_content">
             <div class="container_header">
                 <img src="img/photoHeader.jpg" alt="photo">
@@ -58,6 +68,27 @@
                     </ul>
                 </div>
             </div>
+            <div class="main_project">
+                <h2>PROJECTS</h2>
+                <ul>
+                    <li><a class="text" href="https://daryam04.github.io/homeBakery/">HomeBakery</a></li>
+                    <li><a class="text" href="https://daryam04.github.io/rsschool-cv/">CV</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="code_container">
+                <h2>CODE</h2>
+                <h4>A series of Fibonacci numbers</h4>
+                <pre class="code">
+                    <code class="code__content">
+                        function originalFunction(n) {
+                            return n <= 1 ? n : 
+                            originalFunction(n - 1) + originalFunction(n - 2);
+                        }
+
+                        originalFunction(100);
+                    </code>
+                </pre>
             </div>
         </div>
     </main>

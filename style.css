@@ -1,5 +1,5 @@
 :root {
-    --main-color: #0404049c;
+    --main-color: #040404ca;
     --hover-color: #ffffffe1;
     --bg-header: rgba(400, 218, 166, 0.7);
     --bg-footer: #dac9bfeb;
@@ -10,6 +10,42 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Навигация */
+
+.menu_nav{
+    height: 50px;
+    background-color: var(--bg-footer);
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.href_nav{
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+}
+
+.href_nav a{
+    color: #2e374a;
+    text-decoration: none;
+    transition:  0.25s cubic-bezier(0, 0, 0.8, 1.0);
+}
+
+.href_nav a:hover{
+    color: var();
+    font-size: 24px;
 }
 
 /* Header */
@@ -62,12 +98,14 @@
     margin-bottom: 50px;
 
     border-bottom: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .container_info{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
+    color: var(--main-color);
 }
 
 .container_info h2{
@@ -77,7 +115,8 @@
 
 .main_education, 
 .contacts,
-.main_hardSkills{
+.main_hardSkills,
+.main_project{
     width: 20%;
 }
 
@@ -105,6 +144,50 @@
     line-height: 170%;
 }
 
+.main_project{
+    list-style: none;
+    line-height: 170%;
+}
+
+.main_project a{
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.main_project a:hover{
+    font-size: 18px;
+   
+}
+
+.code_container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.code_container h2, h4{
+    color: var(--main-color);
+    margin: 0 auto;
+}
+
+.code_container h2{
+    margin-bottom: 20px;
+}
+
+.code_container h4{
+    font-size: 16px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.code__content{
+    font-size: 16px;
+    line-height: 180%;
+}
+
+
+
 
 
 
@@ -123,6 +206,7 @@
     align-items: center;
 
     background-color: var(--bg-footer);
+    border-bottom: 1px solid var(--main-color);
 }
 
 .git_container{
@@ -151,11 +235,27 @@
 .container_footer img{
     border-radius: 100%;
     width: 90px;
-    transition: 0.3s;
+    transition: 0.5s;
     border: 1px solid var(--hover-color);
 }
 
 .container_footer img:hover{
     width: 120px;
     border: 1px solid var(--main-color);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.img_logo{
+    width: 270px;
+    height: auto;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 1.8s ease-in-out;
+          transition:         transform 1.8s ease-in-out;
+}
+
+
+.img_logo:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
